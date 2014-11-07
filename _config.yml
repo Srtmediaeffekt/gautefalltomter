@@ -1,13 +1,9 @@
-name : Foundation/Jykill starter
-brand : My Site
+name : Gautefalltomter
+brand : Edison Menlo
 description : This is the description of my site
 keyword: 
-url : http://daigo.org
-imageurl: http://www.daigo.org/wordpress/wp-content/themes/daigo_org-theme-2013/img/glasses.png
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author: Daigo Fujiwara
-analytics: UA-8418273-8
+url : http://edisonreklamebyraa.github.io/gautefalltomter/
+imageurl: http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg
+email : admin@edisonmenlo.no
+author: Svein Erik Farstad
 year: 2014
-markdown: kramdown
