@@ -83,6 +83,14 @@ blockquote {
 	padding-right: 0;
 }
 
+.fullrow:last-child {
+	margin-bottom: -1.8rem;
+}
+footer {
+	background: $primary-color;
+	color: white;
+	height: 4em;
+}
 
 
 /* Placeholders ------------------------------------------------- */
