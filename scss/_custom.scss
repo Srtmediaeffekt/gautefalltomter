@@ -1,3 +1,98 @@
-h1 {
-	color: blue;
+h1, h2 {
+	font-weight: 700;
+}
+h2 {
+	font-size: 2em;
+}
+
+p {
+	line-height: 1.6;
+}
+.row a {
+	text-decoration: underline;
+}
+
+header div {
+	background: rgba(255,255,255,0.9);
+	padding: 0.5em;
+}
+
+header .inline-list {
+	margin-bottom: 0;
+}
+header li {
+}
+
+.buttons, .row .buttons {
+	border: 4px solid $primary-color;
+	border-radius: $global-radius;
+	display: inline;
+	padding: 0.250em 1.250em;
+	text-decoration: none;
+}
+
+.row .buttons.hytteButton {
+	width: 100%;
+	display: block;
+	padding: 0.250em 0.5em;
+	text-align: left;
+	font-weight: 700;	
+}
+.row .buttons.hytteButton span {
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+.banner {
+	height: 55em;
+	background: url("/img/himmelriketBanner.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.friendly {
+	font-size: 1.5em;
+	line-height: 1.2;
+	font-family: 'Indie Flower', cursive;
+}
+.fullrow {
+	max-width: 100%;
+}
+
+.activeLi {
+	border: 1px solid lightgray;
+}
+
+.summer {
+	background: $secondary-lightened;
+}
+blockquote {
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.twohalfs {
+	padding-top: 1.8rem;
+}
+
+.twohalfs .columns:first-child {
+	padding-left: 0;
+}
+.twohalfs .columns:last-child {
+	padding-right: 0;
+}
+
+
+
+/* Placeholders ------------------------------------------------- */
+
+.sixtwo, .threetwo, .threeone, .sixone {
+	display: block;
+	background: $primary-color;
+	width: 100%;
+}
+.sixtwo, .threetwo {height:500px;}.threeone, .sixone {height:235px;}
+.small-3 .threeone:first-child {
+	margin-bottom: 1.8rem;
 }
