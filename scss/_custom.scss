@@ -88,32 +88,62 @@ blockquote {
 	background-image: url("../img/rytterspranget.jpg");
 }
 
+.bannerOmradet {
+	background-image: url("../img/omradetBanner.jpg");
+}
+
 /*---------------------------------------------
  NAVIGATION
 ---------------------------------------------*/
 
-header div {
+header .title-area {
+	margin: 0.250em;
+	background: none;
+}
+
+header .top-bar {
 	background: rgba(255,255,255,0.9);
-	padding: 0.5em;
+	padding: 1.5em;
+	height: auto;
 }
 
 header .inline-list {
 	margin-bottom: 0;
 }
 
-.buttons, .row .buttons {
+.top-bar-section ul li {
+	background: none;
+	margin-left: 1.375rem;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	color: $primary-color;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+	box-shadow: 0 0px 0 1px $primary-color,0 7px 0 1px $primary-color,0 14px 0 1px $primary-color;
+}
+.top-bar.expanded .title-area {
+	background: none;
+}
+
+.buttons, .row .buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons {
 	border: 4px solid $primary-color;
 	border-radius: $global-radius;
 	display: inline-block;
 	padding: 0.50em 1.250em;
 	text-decoration: none;
+	background: none;
+	font-size: 100%;
+	line-height:inherit;
+	color: $primary-color;
 	-webkit-transition: all 0.1s ease; /* For Safari 3.1 to 6.0 */
     transition: all 0.1s ease;
+    
 	
 }
 
 /* Active page / hover */
-.activeLi a, .buttons:hover {
+.top-bar-section li.activeLi:not(.has-form) a:not(.button).buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons.buttons:hover {
 	background-color: $primary-color;
 	color: $green-color;
 }
@@ -156,6 +186,21 @@ header .inline-list {
 	font-size: 0.9em;
 }
 
+.hytter .friendly {
+	min-height: 56px;
+}
+
+
+
+
+
+/*---------------------------------------------
+ HYTTER
+---------------------------------------------*/
+
+.clearing-thumbs li, [data-clearing] li {
+	margin-right: 0;
+}
 
 
 
@@ -191,5 +236,11 @@ footer {
 @media (max-width: 640px) {
 	.mobileMarginBottom {
 		margin-bottom: 1.875rem;
+	}
+	.floatover {
+	margin-bottom: 1.875rem;
+	}
+	.hytter .friendly {
+		min-height: 1px;
 	}
 }
