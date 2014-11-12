@@ -115,6 +115,9 @@ header .inline-list {
 	background: none;
 	margin-left: 1.375rem;
 }
+.top-bar .toggle-topbar.menu-icon {
+	margin-top: -8px;
+}
 
 .top-bar .toggle-topbar.menu-icon a {
 	color: $primary-color;
@@ -258,7 +261,7 @@ footer {
 		margin-left: 0.5rem; 
 	}
 	.logo img {
-		width: 225px;
+		width: 200px;
 		height: auto;
 	}
 	
@@ -279,7 +282,7 @@ footer {
 	}
 	
 	.logo img {
-		width: 175px;
+		width: 150px;
 		height: auto;
 	}
 	.top-bar-section li:not(.has-form) a:not(.button).buttons {
