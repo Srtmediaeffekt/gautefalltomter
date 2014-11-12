@@ -161,8 +161,17 @@ header .inline-list {
 		position: absolute;
 		margin-left: 0.25em;
 		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-moz-transform: scaleX(0);
+		-o-transform: scaleX(0);
+		-ms-transform: scaleX(0);
+		transform-origin: left center;
 		-webkit-transform-origin: left center;
+		-moz-transform-origin: left center;
+		-o-transform-origin: left center;
+		-ms-transform-origin: left center;
 		transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
 	}
 
 	.buttons:hover:after {
@@ -330,6 +339,7 @@ footer {
 		right: 15px;
 		top: 50%;
 		transition: all 0.33s ease;
+		-webkit-transition: all 0.33s ease;
 		border-radius: 2px;
 	}
 	span.first {
@@ -343,11 +353,19 @@ footer {
 	}
 	.expanded span.first {
 		transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
 		margin-top: -2px;
 	}
 	.expanded span.second {
 		margin-top: -2px;
 		transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
 	}
 	.expanded span.third {
 		margin-top: 12px;
