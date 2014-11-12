@@ -147,7 +147,7 @@ header .inline-list {
 }
 
 /* Active page / hover */
-.top-bar-section li.activeLi:not(.has-form) a:not(.button).buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons.buttons:hover {
+.top-bar-section li.activeLi:not(.has-form) a:not(.button).buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons.buttons:hover, .main-content .buttons:hover {
 	background-color: $primary-color;
 	color: $green-color;
 }
@@ -237,6 +237,33 @@ footer {
 /*---------------------------------------------
  SMALL
 ---------------------------------------------*/
+
+
+@media (max-width: 1140px) {
+	.top-bar .title-area {
+		display: block;
+		float: none;
+	}
+	
+	ul.right {
+		float: none!important;
+		display: block;
+		margin-top: 1.5rem;
+	}
+	
+	ul.right li:first-child {
+		margin-left: 0;
+	}
+	ul.right li {
+		margin-left: 0.5rem; 
+	}
+	.logo img {
+		width: 225px;
+		height: auto;
+	}
+	
+}
+
 @media (max-width: 640px) {
 	.mobileMarginBottom {
 		margin-bottom: 1.875rem;
@@ -247,4 +274,72 @@ footer {
 	.hytter .friendly {
 		min-height: 1px;
 	}
+	ul.right li {
+		margin-left: 0;
+	}
+	
+	.logo img {
+		width: 175px;
+		height: auto;
+	}
+	.top-bar-section li:not(.has-form) a:not(.button).buttons {
+		margin-bottom: 0.75rem;
+	}
+	
+	ul.right {
+		margin-top: 0;
+		transition: margin-top 0.5s ease;
+	}
+	.expanded ul.right {
+		margin-top: 1.5rem;
+	}
+	
+	.top-bar-section {
+		opacity: 0;
+		max-height: 0;
+		transition: all 0.5s ease;
+		
+	}
+	.expanded .top-bar-section {
+		max-height: 700px;
+		opacity: 1;
+	}
+	
+	.top-bar .toggle-topbar.menu-icon a span::after {
+		display: none;
+	}
+	
+	.toggle-topbar span {
+		display: block;
+		height: 3px;
+		background: $primary-color;
+		width: 16px;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transition: all 0.33s ease;
+		border-radius: 2px;
+	}
+	span.first {
+		margin-top: -9px;
+	}
+	span.second {
+		margin-top: -3px;
+	}
+	span.third {
+		margin-top: 3px;
+	}
+	.expanded span.first {
+		transform: rotate(45deg);
+		margin-top: -2px;
+	}
+	.expanded span.second {
+		margin-top: -2px;
+		transform: rotate(-45deg);
+	}
+	.expanded span.third {
+		margin-top: 12px;
+		opacity: 0;
+	}
+
 }
