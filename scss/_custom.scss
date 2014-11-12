@@ -318,14 +318,17 @@ footer {
 	}
 	
 	.top-bar-section {
-		opacity: 0;
+		/*opacity: 0;
 		max-height: 0;
-		transition: all 0.5s ease;
+		transition: all 0.5s ease;*/
+		display: none;
 		
 	}
 	.expanded .top-bar-section {
-		max-height: 700px;
-		opacity: 1;
+		/*max-height: 700px;
+		
+		opacity: 1;*/
+		display: block;
 	}
 	
 	.top-bar .toggle-topbar.menu-icon a span::after {
