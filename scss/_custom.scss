@@ -184,7 +184,7 @@ header .title-area {
 }
 
 header .top-bar {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.95);
 	padding: 1.5em;
 	height: auto;
 }
@@ -213,6 +213,9 @@ header .inline-list {
 }
 .top-bar.expanded .title-area {
 	background: none;
+}
+.top-bar.expanded {
+	background: rgba(255, 255, 255, 0.95);
 }
 
 .buttons, .row .buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons {
