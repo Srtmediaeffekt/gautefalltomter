@@ -34,6 +34,66 @@ LAYOUT
 	margin-bottom: -1.875rem;
 }
 
+.floatover img {
+	transition: margin-top 0.2s ease;
+	-webkit-transition: margin-top 0.2s ease;
+}
+.floatover img:hover {
+	margin-top: -0.9rem;
+}
+
+.flipVertical img {
+	 -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+}
+
+.paddingTop {
+	padding-top: 3.6rem;
+}
+.paddingBottom {
+	padding-bottom: 3.6rem;
+}
+
+/*---------------------------------------------
+ SEPERATORS
+---------------------------------------------*/
+
+.marius {
+	width: 100%;
+	height: auto;
+	opacity: 0.2;
+	margin: 1.875em 0;
+	display: block;
+}
+
+.suncrystal {
+	width: 100%;
+	position: relative;
+}
+.suncrystal img {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -62px;
+	top: -61px;
+}
+.underlined {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1.875em;
+}
+.line {
+width: 100%;
+position: absolute;
+bottom: -1em;
+left: 0;
+	
+}
+
 
 /*---------------------------------------------
  TYPOGRAPHY
@@ -54,12 +114,14 @@ p {
 	font-size: 1.5em;
 	line-height: 1.2;
 	font-family: 'Indie Flower', cursive;
+	color: $brown-color;
 }
 
 blockquote {
 	font-weight: 300;
 	font-size: 1.5em;
 	text-align: center;
+	border: none;
 }
 
 /* Links */
@@ -218,6 +280,9 @@ header .inline-list {
 	margin-right: 0;
 }
 
+.hytter .marius {
+	padding-right: 0.875rem;
+}
 
 
 /*---------------------------------------------
@@ -227,7 +292,27 @@ header .inline-list {
 footer {
 	background: $primary-color;
 	color: white;
-	height: 4em;
+	height: auto;
+	
+}
+.logoAlt {
+	max-width: 225px;
+	width: 100%;
+}
+
+footer ul {
+	list-style: none;
+	margin-left: 0;
+}
+footer a {
+	color: #fff;
+	margin-left: 0;
+	transition: margin-left 0.2s ease;
+	-webkit-transition: margin-left 0.2s ease;
+}
+footer a:hover {
+	color: #fff;
+	margin-left: 0.250em;
 }
 
 
@@ -271,7 +356,10 @@ footer {
 		margin-left: 0;
 	}
 	ul.right li {
-		margin-left: 0.5rem; 
+		margin-left: 0.20rem; 
+	}
+	.top-bar-section li:not(.has-form) a:not(.button).buttons {
+		padding: 0.25em 0.65em;
 	}
 	.logo img {
 		width: 200px;
