@@ -129,6 +129,15 @@ blockquote {
 	text-decoration: underline;
 }
 
+a.pushLink {
+		margin-left: 0;
+	transition: margin-left 0.2s ease;
+	-webkit-transition: margin-left 0.2s ease;
+}
+a.pushLink:hover {
+	margin-left: 0.250em;
+}
+
 
 /*-----------------------------------------------------------------------------
  SECTION STYLES
@@ -158,6 +167,17 @@ blockquote {
  NAVIGATION
 ---------------------------------------------*/
 
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	-webkit-transition: top 0.2s ease-in-out;
+	transition: top 0.2s ease-in-out;	
+}
+.nav-up {
+	top: -100px;
+}
 header .title-area {
 	margin: 0.250em;
 	background: none;
@@ -211,6 +231,8 @@ header .inline-list {
 	
 }
 
+
+
 /* Active page / hover */
 .top-bar-section li.activeLi:not(.has-form) a:not(.button).buttons, .top-bar-section li:not(.has-form) a:not(.button).buttons.buttons:hover, .main-content .buttons:hover {
 	background-color: $primary-color;
@@ -246,6 +268,8 @@ header .inline-list {
 	}
 
 } 
+
+
 
 /*---------------------------------------------
  INDEX
@@ -286,6 +310,19 @@ header .inline-list {
 
 
 /*---------------------------------------------
+ HYTTER
+---------------------------------------------*/
+
+.contactinfo .mobile-i {
+	width: 0.875em;
+	margin-right: 0.50em;
+}
+.contactinfo .email-i {
+	width: 1.25em;
+	margin-right: 0.50em;
+}
+
+/*---------------------------------------------
  FOOTER
 ---------------------------------------------*/
 
@@ -306,13 +343,9 @@ footer ul {
 }
 footer a {
 	color: #fff;
-	margin-left: 0;
-	transition: margin-left 0.2s ease;
-	-webkit-transition: margin-left 0.2s ease;
 }
 footer a:hover {
 	color: #fff;
-	margin-left: 0.250em;
 }
 
 
@@ -364,6 +397,9 @@ footer a:hover {
 	.logo img {
 		width: 200px;
 		height: auto;
+	}
+	.nav-up {
+	top: -150px;
 	}
 	
 }
@@ -463,6 +499,9 @@ footer a:hover {
 	.expanded span.third {
 		margin-top: 12px;
 		opacity: 0;
+	}
+	.nav-up {
+	top: -100px;
 	}
 
 }
