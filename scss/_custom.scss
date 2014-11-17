@@ -127,6 +127,41 @@ left: 0;
 	width: 1.25em;
 }
 
+
+
+
+/*---------------------------------------------
+ IMAGES STYLES
+---------------------------------------------*/
+
+.clearing-thumbs a img {
+	position: relative;
+}
+.clearing-thumbs a:after {
+	content: "+";
+	position: absolute;
+	display: block;
+	top: -1em;
+	right: 1.5em;
+	opacity: 0;
+	height: 25px;
+	line-height: 0;
+	width: 25px;
+	padding: 10px 5px 5px 5px;
+	background: rgba(255,255,255,0.7);
+	color: $primary-color;
+	border: 2px solid $primary-color;
+	border-radius: 19px;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+}
+
+.clearing-thumbs a:hover:after {
+	top: .5em;
+	right: 1.5em;
+	opacity: 1;
+}
+
 /*---------------------------------------------
  TYPOGRAPHY
 ---------------------------------------------*/
@@ -151,7 +186,8 @@ p {
 
 blockquote {
 	font-weight: 300;
-	font-size: 1.5em;
+	font-size: 1.4em;
+	line-height: 1.6;
 	text-align: center;
 	border: none;
 }
@@ -219,6 +255,9 @@ header .title-area {
 	background: none;
 }
 
+.logo {
+	max-width: 300px;
+}
 header .top-bar {
 	background: rgba(255,255,255,0.95);
 	padding: 1.5em;
@@ -355,6 +394,15 @@ header .inline-list {
 ---------------------------------------------*/
 
 
+/*---------------------------------------------
+ OMRÅDET
+---------------------------------------------*/
+
+.videoplayer {
+	height: 294px;
+}
+
+
 
 
 /*---------------------------------------------
@@ -435,6 +483,9 @@ footer a:hover {
 	}
 	.nav-up {
 	top: -150px;
+	}
+	.videoplayer {
+	height: 234px;
 	}
 	
 }
@@ -539,5 +590,6 @@ footer a:hover {
 	.nav-up {
 	top: -100px;
 	}
+
 
 }
