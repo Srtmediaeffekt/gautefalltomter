@@ -2,7 +2,7 @@
 LAYOUT
 ---------------------------------------------*/
 .row {
-	padding-top: 2.8rem;
+	padding-top: 3.6rem;
 	padding-bottom: 3.6rem;
 }
 
@@ -36,11 +36,12 @@ LAYOUT
 }
 
 .floatover img {
+	margin-top: 0.875rem;
 	transition: margin-top 0.2s ease;
 	-webkit-transition: margin-top 0.2s ease;
 }
 .floatover img:hover {
-	margin-top: -0.9rem;
+	margin-top: 0rem;
 }
 
 .flipVertical img {
@@ -72,6 +73,7 @@ LAYOUT
 iframe {
 	width: 100%;
 	padding: 0.875rem;
+	margin: 0.5rem 0 2rem 0;
 	background: $brown-color;
 }
 [class*="column"]+[class*="column"]:last-child {
@@ -86,7 +88,7 @@ iframe {
 	width: 100%;
 	height: auto;
 	opacity: 0.2;
-	margin: 1.875rem 0;
+	margin: 3rem 0;
 	display: block;
 }
 
@@ -175,7 +177,6 @@ h2 {
 }
 
 p {
-	line-height: 1.6;
 }
 
 .friendly {
