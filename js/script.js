@@ -2,9 +2,9 @@
 $(document).foundation();
 $(function() {
 
-    loadAnimation("#SnowAnimation","svg/ski.svg", 8 , 4);
+    loadAnimation("#SnowAnimation","svg/ski.svg", 8 , 2);
     loadAnimation("#SummerAnimation","svg/bike.svg", 7 , 3 );
-    loadAnimation("#WalksAnimation","svg/man.svg",12, 6 );
+    loadAnimation("#WalksAnimation","svg/man.svg",16, 5 );
 
 
 
