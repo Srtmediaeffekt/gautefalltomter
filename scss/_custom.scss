@@ -541,3 +541,33 @@ footer a:hover {
 	}
 
 }
+
+
+#SnowAnimation, #WalksAnimation, #SummerAnimation{
+    display: none;
+}
+
+
+
+#SnowAnimation, #WalksAnimation{
+    position: absolute;
+    right: 0;
+    width: 50%; 
+    height: 730px;     
+}
+
+
+
+#WalksAnimation{
+   
+    height: 800px;     
+}
+
+
+
+#SummerAnimation{
+    position: absolute;
+    left: 0;
+    width: 50%; 
+    height: 800px;     
+}
