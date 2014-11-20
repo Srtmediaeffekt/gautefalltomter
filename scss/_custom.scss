@@ -65,10 +65,29 @@
 .nopaddRight {
 	  padding-right: 0;
 }
+.row.nopaddBottom {
+	padding-bottom: 0;
+}
+.row.nopaddTop {
+	padding-top: 0;
+} 
 .noPadd {
 	  padding-left: 0;
 	  padding-right: 0;
 }
+.row.noPadd {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.marginBottom {
+	margin-bottom: 1.875rem;
+}
+.marginTop {
+	margin-top: 1.875rem;
+}
+
+.minHeight84 {min-height: 84px;}
 
 iframe {
 	  width: 100%;
@@ -194,15 +213,43 @@ blockquote {
 	  border: none;
 }
 
+.bigger-text {
+	font-size: 215%;
+	margin-bottom: 0;
+}
+
+.columns ul {
+	list-style: none;
+}
+.columns ul li:before {
+	content: "";
+	width: .75rem;
+	height: .75rem;
+	background-image: url("../img/GautefallBullet.png");
+	background-size:contain;
+	display: inline-block;
+	margin-left: -1.1rem;
+	margin-right: .6rem;
+	
+}
+.hyttePage .columns ul li:before, .areaPage .columns ul li:before {
+	content: none;
+}
+
 /* Links */
 .row a {
 	  text-decoration: underline;
+	  transition: color 0.2s ease;
+	  -webkit-transition: color 0.2s ease;
+}
+.row a:hover {
+	color: $brown-color;
 }
 
 a.pushLink {
 		margin-left: 0;
-	  transition: margin-left 0.2s ease;
-	  -webkit-transition: margin-left 0.2s ease;
+	  transition: all 0.2s ease;
+	  -webkit-transition: all 0.2s ease;
 }
 a.pushLink:hover {
 	  margin-left: 0.250rem;
@@ -378,7 +425,6 @@ header .inline-list {
 
 
 
-
 /*---------------------------------------------
   HYTTER
   ---------------------------------------------*/
@@ -433,30 +479,31 @@ footer ul {
 footer a {
 	  color: #fff;
 }
-footer a:hover {
-	  color: #fff;
+footer .row a:hover {
+	  color: $green-color;
 }
 
-
-/* Placeholders ------------------------------------------------- */
-
-.sixtwo, .threetwo, .threeone, .sixone {
-	  display: block;
-	  background: $primary-color;
-	  width: 100%;
-}
-.marginBottom {
-	  margin-bottom: 1.875rem;
-}
 
 
 /*-----------------------------------------------------------------------------
-  SECTION STYLES
+  RESPONSIVE
   -----------------------------------------------------------------------------*/
-/*---------------------------------------------
-  SMALL
-  ---------------------------------------------*/
 
+/*---------------------------------------------
+ X-LARGE
+---------------------------------------------*/
+
+
+@media (min-width: 1920px) {
+	.banner {
+		height: 70rem;
+	}
+}
+
+
+/*---------------------------------------------
+ MEDIUM
+---------------------------------------------*/
 
 @media (max-width: 1075px) {
 
@@ -496,8 +543,55 @@ footer a:hover {
 	  .videoplayer {
 	      height: 234px;
 	  }
-	  
+	.banner {
+		height: 35rem;
+	}
+	.top-bar .title-area {
+		display: block;
+		float: none;
+	}
+	
+	.row {
+	padding-top: 3.6rem;
+	padding-bottom: 3.6rem;
+	}
+	.floatover img:hover {
+	margin-top: .875rem;
+	}
+	ul.right {
+		float: none!important;
+		display: block;
+		margin-top: 1.5rem;
+	}
+	
+	ul.right li:first-child {
+		margin-left: 0;
+	}
+	ul.right li {
+		margin-left: 0.20rem; 
+	}
+	.top-bar-section li:not(.has-form) a:not(.button).buttons {
+		padding: 0.25rem 0.65rem;
+	}
+	.logo img {
+		width: 200px;
+		height: auto;
+	}
+	.top-bar-section ul {
+		padding-top: 0;
+	}
+	.nav-up {
+	top: -150px;
+	}
+	.videoplayer {
+	height: 234px;
+	}
+
 }
+
+/*---------------------------------------------
+ SMALL
+---------------------------------------------*/
 
 @media (max-width: 640px) {
 
