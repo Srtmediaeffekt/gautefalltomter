@@ -24,9 +24,9 @@ $(function() {
     function Person (f, mainSVG, speed, delay) {
         var active = 0;
         var g = f.select("g").clone();
-        var p = new Snap();
         var allPaths = g.selectAll("g>g[id]")
-        var myPathC = f.select(".path");;
+        var myPathC = f.select("#path");;
+//        mainSVG.append(myPathC.clone());
         var lenC = myPathC.getTotalLength();
         var movePoint = myPathC.getPointAtLength( 0 );
 
@@ -39,7 +39,7 @@ $(function() {
         function animate(){
             Snap.animate(0, lenC, function( value ) {
                 movePoint = myPathC.getPointAtLength( value );
-                g.transform( 't' + parseInt(movePoint.x - 100 ) + ',' + parseInt( movePoint.y - 420 ) + 'r' + (movePoint.alpha + 90) + 's0.3');
+                g.transform( 't' + parseInt(movePoint.x  ) + ',' + parseInt( movePoint.y  ) + 'r' + (movePoint.alpha )  );
             }, lenC* speed,mina.easeout,animate);
 
         }
