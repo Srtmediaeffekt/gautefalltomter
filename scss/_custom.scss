@@ -707,12 +707,15 @@ footer .row a:hover {
 
 #SnowAnimation, #WalksAnimation, #SummerAnimation{
     display: none;
+	background-repeat: no-repeat;
+	
 }
 
 
 #SnowAnimation{
-
-    
+	background-image: url("../img/skipath.png");
+	background-position: top right;
+	background-size: contain;
 }
 
 
@@ -726,7 +729,7 @@ footer .row a:hover {
 
 
 #WalksAnimation{
-    
+    background-image: url("../img/walkpath.png");
     height: 800px;     
 }
 
@@ -735,7 +738,10 @@ footer .row a:hover {
     position: absolute;
     left: 0;
     width: 800px; 
-    height: 800px;     
+    height: 800px;
+    background-image: url("../img/bikepath.png"); 
+    background-position: top left; 
+    background-size: 90%;
 }
 
 body > svg{
