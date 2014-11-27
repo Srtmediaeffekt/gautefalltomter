@@ -98,6 +98,9 @@ iframe {
 [class*="column"]+[class*="column"]:last-child {
 	  
 }
+.no-large {
+	display: none;
+}
 
 /*---------------------------------------------
   SEPERATORS & ICONS
@@ -336,27 +339,56 @@ a.pushLink:hover {
 .bannerWrap span:hover {
 	opacity: 1;
 }
-.h22 {left:18%;top:67%;}
-.h23 {left:33%;top:70%;}
-.h24 {left:19%;top:53%;}
-.h25 {left:30%;top:44%;}
-.h26 {left:40%;top:38%;}
-.h27 {left:44%;top:44%;}
-.h28 {left:54%;top:43%;}
-.h29 {left:82%;top:45%;}
+.r5 {left:18%;top:67%;}
+.r7 {left:33%;top:70%;}
+.r2 {left:19%;top:53%;}
+.r10 {left:30%;top:44%;}
+.r12 {left:40%;top:38%;}
+.r8B {left:44%;top:44%;}
+.r8A {left:54%;top:43%;}
+.r13 {left:82%;top:45%;}
 
-.h11 {left:30%;top:52%;}
-.h12 {left:37%;top:53%;}
-.h13 {left:45%;top:51%;}
-.h14 {left:53%;top:51%;}
-.h15 {left:63%;top:36%;}
-.h16 {left:66%;top:40%;}
-.h17 {left:71%;top:41%;}
+.r4D {left:30%;top:52%;}
+.r4C {left:37%;top:53%;}
+.r4B {left:45%;top:51%;}
+.r4A {left:53%;top:51%;}
+.r19A {left:63%;top:36%;}
+.r19B {left:66%;top:40%;}
+.r17 {left:71%;top:41%;}
 
-.h31 {left:63%;top:49%;}
-.h32 {left:51%;top:38%;}
-.h33 {left:76%;top:41%;}
+.r6 {left:63%;top:49%;}
+.r14 {left:51%;top:38%;}
+.r15 {left:76%;top:41%;}
 
+
+.g25 {left:60%;top:79%;}
+.g24 {left:43%;top:72%;}
+.g22 {left:31%;top:65%;}
+.g20 {left:23%;top:61%;}
+.g18 {left:20%;top:56%;}
+
+
+.g5 {left:70%;top:58%;}
+.g23 {left:60%;top:57%;}
+.g21 {left:50%;top:55%;}
+.g19 {left:43%;top:54%;}
+.g17 {left:35%;top:53%;}
+.g16 {left:27%;top:50%;}
+.g15 {left:39%;top:49%;}
+.g14 {left:35%;top:46%;}
+.g13 {left:42%;top:45%;}
+.g12 {left:47%;top:42%;}
+.g9 {left:48%;top:47%;}
+.g8 {left:66%;top:46%;}
+.g7 {left:63%;top:50%;}
+.g6 {left:73%;top:48%;}
+.g4 {left:85%;top:51%;}
+
+.g11 {left:56%;top:43%;}
+.g10 {left:63%;top:42%;}
+.g3 {left:70%;top:43%;}
+.g2 {left:80%;top:44%;}
+.g1 {left:91%;top:45%;}
 
 /*---------------------------------------------
   NAVIGATION
@@ -767,9 +799,19 @@ footer .row a:hover {
 	  .nav-up {
 	      top: -100px;
 	  }
+	  
+	  .bannerWrap {
+		  display: none;
+	  }
+	  .no-large {
+		  display: block;
+	}
 
 }
 
+/*-----------------------------------------------------------------------------
+  SVG animation
+  -----------------------------------------------------------------------------*/
 
 #SnowAnimation, #WalksAnimation, #SummerAnimation{
     display: none;
