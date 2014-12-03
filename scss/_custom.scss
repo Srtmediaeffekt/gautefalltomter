@@ -159,6 +159,7 @@ iframe {
 
 .loype-i {
 	  width: 1.25rem;
+	  padding-bottom: 0.2rem;
 }
 
 
@@ -238,6 +239,9 @@ blockquote {
 	margin-bottom: 0;
 }
 
+.smallKern {
+	padding-right: 0.12rem;
+}
 .columns ul, ul.medium-text {
 	list-style: none;
 }
@@ -602,6 +606,11 @@ footer .row a:hover {
 	  color: $green-color;
 }
 
+footer .icon-i {
+	padding-bottom: 0.25rem;
+	width: 1rem;
+}
+
 
 
 /*-----------------------------------------------------------------------------
@@ -714,7 +723,7 @@ footer .row a:hover {
 
 @media (max-width: 640px) {
 
-
+	
 	  .banner {
 		    height: 15rem;
 	  }
