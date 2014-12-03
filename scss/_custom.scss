@@ -556,6 +556,13 @@ header .inline-list {
   RYTTERSPRANGET VEST
   ---------------------------------------------*/
 
+.orbit-container .orbit-prev, .orbit-container .orbit-next {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
 
 /*---------------------------------------------
   OMRÅDET
