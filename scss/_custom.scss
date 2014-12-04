@@ -567,6 +567,23 @@ header .inline-list {
 .orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
+.orbit-bullets-container {
+	background: $secondary-color;
+	padding-bottom: 0.75rem;
+}
+
+.orbit-bullets li.active {
+	background: $brown-color;
+}
+.orbit-bullets {
+	margin-bottom: 0;
+}
+.orbit-bullets li {
+	border: 2px solid $brown-color;
+	width: 1.5rem;
+	background: $secondary-color;
+	height: 1.5rem;
+}
 
 /*---------------------------------------------
   OMRÅDET
@@ -753,6 +770,7 @@ footer .icon-i {
 		    margin-top: 0;
 		    padding-top: 1.5rem;
 		    transition: all 0.2s ease;
+		    -webkit-transition: all 0.2s ease;
 	  }
 	  .expanded ul.right {
 		    margin-top: 1.5rem;
