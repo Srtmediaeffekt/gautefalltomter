@@ -573,13 +573,13 @@ header .inline-list {
 }
 
 .orbit-bullets li.active {
-	background: $brown-color;
+	background: $primary-color;
 }
 .orbit-bullets {
 	margin-bottom: 0;
 }
 .orbit-bullets li {
-	border: 2px solid $brown-color;
+	border: 2px solid $primary-color;
 	width: 1.5rem;
 	background: $secondary-color;
 	height: 1.5rem;
