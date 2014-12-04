@@ -62,19 +62,15 @@
 	    
 	    lastScrollTop = st;
 	}
+$(".accordion dd").on("click", "a:eq(0)", function (event)
+      {
+        var dd_parent = $(this).parent();
 
-//Smooth scroll	
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+        if(dd_parent.hasClass('active'))
+          $(".accordion dd div.content:visible").slideToggle("normal");
+        else
+        {
+          $(".accordion dd div.content:visible").slideToggle("normal");
+          $(this).parent().find(".content").slideToggle("normal");
+        }
+      });

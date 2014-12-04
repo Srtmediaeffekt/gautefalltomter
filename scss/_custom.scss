@@ -542,7 +542,24 @@ header .inline-list {
   HYTTER
   ---------------------------------------------*/
 
+.accordion .accordion-navigation>a, .accordion dd>a {
+	background: $primary-color;
+	color: $green-color;
+	border-radius: $global-radius;
+}
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	background: $primary-color;
+}
 
+.accordion .accordion-navigation.active>a, .accordion dd.active>a {
+	background: $primary-color;
+	border-bottom: 8px solid $green-color;
+	border-radius:3px 3px 0px 0px;
+}
+.accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+	border-radius:0px 0px 3px 3px;
+	border-bottom: 8px solid $green-color;
+}
 
 .clearing-thumbs li, [data-clearing] li {
 	  margin-right: 0;
