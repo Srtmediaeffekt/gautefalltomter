@@ -545,6 +545,7 @@ header .inline-list {
 .accordion .accordion-navigation>a, .accordion dd>a {
 	background: $primary-color;
 	color: $green-color;
+	text-decoration: none;
 	border-radius: $global-radius;
 }
 .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
