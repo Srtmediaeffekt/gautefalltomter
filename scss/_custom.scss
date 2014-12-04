@@ -558,6 +558,7 @@ header .inline-list {
 }
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
 	border-radius:0px 0px 3px 3px;
+	transition: background 0.2s ease;
 	border-bottom: 8px solid $green-color;
 }
 
