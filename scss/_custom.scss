@@ -565,8 +565,12 @@ header .inline-list {
 }
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
 	border-radius:0px 0px 3px 3px;
-	transition: background 0.2s ease;
+	opacity: 1;
 	border-bottom: 8px solid $green-color;
+}
+.accordion .accordion-navigation > .content, .accordion dd > .content  {
+	opacity: 0;
+	transition: all 0.2s ease;
 }
 
 .clearing-thumbs li, [data-clearing] li {
