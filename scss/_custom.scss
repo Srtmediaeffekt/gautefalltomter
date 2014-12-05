@@ -696,6 +696,9 @@ footer .icon-i {
 		    display: block;
 		    margin-top: 1.5rem;
 	  }
+	  .friendly {
+		  font-size: 1.1rem;
+	  }
 	  
 	  ul.right li:first-child {
 		    margin-left: 0;
@@ -725,6 +728,9 @@ footer .icon-i {
 	.top-bar .title-area {
 		display: block;
 		float: none;
+	}
+	.row .buttons.hytteButton span {
+		display: block;
 	}
 	
 	.row {
