@@ -676,20 +676,11 @@ footer .icon-i {
 
 
 /*---------------------------------------------
- MEDIUM
+ MENU FIX
 ---------------------------------------------*/
 
-@media (max-width: 1075px) {
-
-
-		h1 {
-			font-size: 2.25rem;
-		}
-
-	  .banner {
-		    height: 35rem;
-	  }
-	  .top-bar .title-area {
+@media (max-width: 1180px) {
+	 .top-bar .title-area {
 		    display: block;
 		    float: none;
 	  }
@@ -699,28 +690,43 @@ footer .icon-i {
 		    display: block;
 		    margin-top: 1.5rem;
 	  }
-	  .friendly {
-		  font-size: 1.1rem;
-	  }
+
 	  
 	  ul.right li:first-child {
 		    margin-left: 0;
 	  }
-	  ul.right li {
-		    margin-left: 0.20rem; 
-	  }
-	  .top-bar-section li:not(.has-form) a:not(.button).buttons {
-		    padding: 0.25rem 0.65rem;
-	  }
+
+	 
 	  .logo img {
 		    width: 200px;
 		    height: auto;
 	  }
-	  .top-bar-section ul {
+	  	  .top-bar-section ul {
 		    padding-top: 0;
 	  }
 	  .nav-up {
 	      top: -150px;
+	  }
+
+}
+
+
+/*---------------------------------------------
+ MEDIUM
+---------------------------------------------*/
+
+@media (max-width: 1075px) {
+
+
+		h1 {
+			font-size: 2.25rem;
+		}
+			  .friendly {
+		  font-size: 1.1rem;
+	  }
+
+	  .banner {
+		    height: 35rem;
 	  }
 	  .videoplayer {
 	      height: 234px;
@@ -743,32 +749,7 @@ footer .icon-i {
 	.floatover img:hover {
 	margin-top: .875rem;
 	}
-	ul.right {
-		float: none!important;
-		display: block;
-		margin-top: 1.5rem;
-	}
-	
-	ul.right li:first-child {
-		margin-left: 0;
-	}
-	ul.right li {
-		margin-left: 0.20rem; 
-	}
-	.top-bar-section li:not(.has-form) a:not(.button).buttons {
-		padding: 0.25rem 0.65rem;
-	}
-	.logo img {
-		width: 200px;
-		height: auto;
-	}
-	.top-bar-section ul {
-		padding-top: 0;
-	}
-	.nav-up {
-	top: -150px;
-	}
-	.videoplayer {
+		.videoplayer {
 	height: 234px;
 	}
 	.orbit-container {
@@ -779,6 +760,24 @@ footer .icon-i {
 	}
 
 }
+
+/*---------------------------------------------
+ MEDIUM-NAV
+---------------------------------------------*/
+
+@media (max-width: 880px) {
+	 .top-bar-section li:not(.has-form) a:not(.button).buttons {
+		    padding: 0.20rem 0.40rem;
+		    border-width: 2px;
+		    border-radius: 2px;
+	  }
+	  	  ul.right li {
+		    margin-left: -2px; 
+	  }
+	 
+}
+
+
 
 /*---------------------------------------------
  SMALL
