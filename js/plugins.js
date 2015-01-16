@@ -257,4 +257,7 @@ $(".accordion dd").on("click", "a:eq(0)", function (event)
         Retina.init(root);
     }
 })();
+
+
+
       

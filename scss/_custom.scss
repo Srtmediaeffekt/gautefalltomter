@@ -403,6 +403,165 @@ a.pushLink:hover {
 .g2 {left:80%;top:44%;}
 .g1 {left:91%;top:45%;}
 
+
+
+/* NEWS ALERT */
+.newsWrap {
+	position: relative;
+	height: 100%;
+}
+.newsAlert {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+a.newsButton {
+	margin: 0 0 1.25rem 0.75rem;
+	padding-left: 2.8rem;
+	text-decoration: none;
+	color: $secondary-color;
+}
+a.newsButton:hover {
+	color: $secondary-color;
+}
+a.newsButton:hover span {
+	color: $green-color;
+}
+a.newsButton span {
+	color: white;
+	text-decoration: underline;
+}
+.reveal-modal-bg {
+	z-index: 998;
+}
+dialog, .reveal-modal {
+	z-index:999;
+}
+
+#containerCircle {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  background: #45453f;
+position: absolute;
+	bottom: 52px;
+}
+
+.pulse {
+  width: 10px;
+  height: 10px;
+  border: 5px solid $secondary-color;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: $secondary-color;
+  z-index: 10;
+  position: absolute;
+}
+
+.dot {
+  border: 10px solid $secondary-color;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: pulse 3s ease-out;
+  -moz-animation: pulse 3s ease-out;
+  animation: pulse 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  opacity: 0;
+}
+
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+.animated { 
+    -webkit-animation-duration: 0.5s; 
+    animation-duration: 0.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp;
+    -webkit-animation-delay: 1.2s; /* Chrome, Safari, Opera */
+    animation-delay: 1.2s;
+}
+
+
 /*---------------------------------------------
   NAVIGATION
   ---------------------------------------------*/
@@ -532,7 +691,7 @@ header .inline-list {
 	  text-align: left;
 	  font-weight: 700;	
 }
-.row .buttons.hytteButton span {
+.row .buttons.hytteButton span, .smallText {
 	  font-weight: 300;
 	  font-size: 0.9rem;
 }
