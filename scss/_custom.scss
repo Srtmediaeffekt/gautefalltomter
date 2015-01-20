@@ -408,18 +408,21 @@ a.pushLink:hover {
 /* NEWS ALERT */
 .newsWrap {
 	position: relative;
-	height: 100%;
+	top: 6.6em;
+	left: 0;
 }
 .newsAlert {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	min-width: 290px;
+	padding: 1.5em;
 }
 a.newsButton {
-	margin: 0 0 1.25rem 0.75rem;
+	margin: 0 0 1.25rem 0;
 	padding-left: 2.8rem;
 	text-decoration: none;
 	color: $secondary-color;
+	width: 100%;
+	text-align: left;
 }
 a.newsButton:hover {
 	color: $secondary-color;
@@ -439,12 +442,12 @@ dialog, .reveal-modal {
 }
 
 #containerCircle {
-  margin-top: 20px;
-  margin-left: 30px;
-  position: relative;
-  background: #45453f;
+margin-top: 20px;
+margin-left: 18px;
+background: #45453F;
 position: absolute;
-	bottom: 52px;
+top: 1.5em;
+left: 1.5em;
 }
 
 .pulse {
@@ -535,7 +538,7 @@ position: absolute;
 @-webkit-keyframes fadeInUp { 
     0% { 
         opacity: 0; 
-        -webkit-transform: translateY(20px); 
+        -webkit-transform: translateY(-20px); 
     } 
     100% { 
         opacity: 1; 
@@ -546,7 +549,7 @@ position: absolute;
 @keyframes fadeInUp { 
     0% { 
         opacity: 0; 
-        transform: translateY(20px); 
+        transform: translateY(-20px); 
     } 
     100% { 
         opacity: 1; 
@@ -849,6 +852,10 @@ footer .icon-i {
 		    display: block;
 		    margin-top: 1.5rem;
 	  }
+	  
+	  .newsWrap {
+		  top: 9.4em;
+	  }
 
 	  
 	  ul.right li:first-child {
@@ -882,6 +889,10 @@ footer .icon-i {
 		}
 			  .friendly {
 		  font-size: 1.1rem;
+	  }
+	  
+	  .newsWrap {
+		  top: 3.6em;
 	  }
 
 	  .banner {
@@ -974,6 +985,9 @@ footer .icon-i {
 	
 	  .banner {
 		    height: 20rem;
+	  }
+	  .newsWrap {
+		  top: 0.1em;
 	  }
 
 	  .mobileMarginBottom {
