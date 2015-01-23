@@ -453,17 +453,17 @@ left: 1.5em;
 .pulse {
   width: 10px;
   height: 10px;
-  border: 5px solid $secondary-color;
+  border: 5px solid $green-color;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  background-color: $secondary-color;
+  background-color: $green-color;
   z-index: 10;
   position: absolute;
 }
 
 .dot {
-  border: 10px solid $secondary-color;
+  border: 10px solid $green-color;
   background: transparent;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
