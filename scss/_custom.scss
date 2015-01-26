@@ -410,11 +410,13 @@ a.pushLink:hover {
 	position: relative;
 	top: 6.6em;
 	left: 0;
+	height: 4em;
+	background: $primary-color;
 }
 .newsAlert {
 	position: absolute;
 	min-width: 290px;
-	padding: 1.5em;
+	padding: 0.5em 1.5em 0.5em 2.5em;
 }
 a.newsButton {
 	margin: 0 0 1.25rem 0;
@@ -426,6 +428,7 @@ a.newsButton {
 }
 a.newsButton:hover {
 	color: $secondary-color;
+	background: $primary-color;
 }
 a.newsButton:hover span {
 	color: $green-color;
@@ -446,8 +449,8 @@ margin-top: 20px;
 margin-left: 18px;
 background: #45453F;
 position: absolute;
-top: 1.5em;
-left: 1.5em;
+top: .5em;
+left: 2.25em;
 }
 
 .pulse {
