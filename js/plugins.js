@@ -29,18 +29,12 @@
 	var delta = 5;
 	var navbarHeight = $('header').outerHeight();
 	
-	$(window).scroll(hasScrolled);
-	$("body").scroll(hasScrolled);
 
-	function hasScrolled(){
-		didScroll = true;			
-	}
 	
 	setInterval(function() {
-	    if (didScroll) {
-	        hasScrolled();
-	        didScroll = false;
-	    }
+	   
+	  hasScrolled();
+	   
 	}, 150);
 	
 	function hasScrolled() {
