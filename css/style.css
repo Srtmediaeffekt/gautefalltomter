@@ -7494,7 +7494,8 @@ th.show-for-print {
 }
 
 body.indexClass,html.indexHtml {
-
+	overflow-x: hidden;
+	max-width: 100%;
 }
 
 .row {
