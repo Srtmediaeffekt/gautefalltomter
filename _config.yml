@@ -7,3 +7,4 @@ imageurl: http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg
 email : admin@edisonmenlo.no
 author: Svein Erik Farstad
 year: 2014
+exclude: [node_modules]

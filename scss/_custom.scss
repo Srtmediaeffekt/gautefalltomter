@@ -7,7 +7,7 @@ body.indexClass, html.indexHtml {
 max-width: 100%;
 overflow-x: hidden;
 }
-  
+   
 .row {
 	  padding-top: 3.6rem;
 	  padding-bottom: 3.6rem;
@@ -48,7 +48,7 @@ overflow-x: hidden;
 	  -webkit-transition: margin-top 0.2s ease;
 }
 .floatover img:hover {
-	  margin-top: 0rem;
+	  /* margin-top: 0rem; */
 }
 
 .flipVertical img {
@@ -111,6 +111,7 @@ iframe {
 .no-large {
 	display: none;
 }
+
 
 /*---------------------------------------------
   SEPERATORS & ICONS
@@ -310,6 +311,9 @@ a.pushLink:hover {
 
 .bannerHome {
 	  background-image: url("../img/himmelriketBanner.jpg");
+}
+.bannerHome2 {
+	  background-image: url("../img/homeBanner.jpg");
 }
 .bannerRytter {
 	  background-image: url("../img/rytterspranget.jpg");
@@ -674,7 +678,7 @@ header .inline-list {
 	  }
 
 	  .buttons:hover:after {
-	      width: 100%;
+	       width: auto;
 	      opacity: 1;
 	      -webkit-transform: scaleX(1);
 	  }
@@ -742,7 +746,7 @@ header .inline-list {
 .hyttePage .clearing-thumbs li:last-child {
 	  float: left;
 }
-.hyttePage h2 span {
+.hyttePage h2 span, .hyttePage h3 span {
 	font-weight: 300;
 	font-size: 16px;
 }
@@ -750,6 +754,16 @@ header .inline-list {
 .clearing-blackout {
 background: rgba(0, 0, 0, 0.9); 
 }
+
+
+.hytteline {
+	padding-top: 0;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid $brown-color;
+}
+
+
 
 /*---------------------------------------------
   RYTTERSPRANGET VEST
@@ -921,7 +935,7 @@ footer .icon-i {
 	padding-bottom: 3.6rem;
 	}
 	.floatover img:hover {
-	margin-top: .875rem;
+	/* margin-top: .875rem; */
 	}
 		.videoplayer {
 	height: 234px;
