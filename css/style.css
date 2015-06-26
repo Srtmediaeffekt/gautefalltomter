@@ -5965,6 +5965,7 @@ a.pushLink:hover {
   background-image: url("../img/himmelriketBanner.jpg"); }
 
 .bannerHome2 {
+  height: 40rem;
   background-image: url("../img/homeBanner.jpg"); }
 
 .bannerRytter {
