@@ -5796,6 +5796,9 @@ iframe {
 .no-large {
   display: none; }
 
+.floatThisLeft {
+  float: left !important; }
+
 /*---------------------------------------------
   SEPERATORS & ICONS
   ---------------------------------------------*/
@@ -5879,7 +5882,8 @@ h1, h2 {
   font-weight: 700; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.2; }
 
 .friendly {
   font-size: 1.5rem;
@@ -5965,7 +5969,7 @@ a.pushLink:hover {
   background-image: url("../img/himmelriketBanner.jpg"); }
 
 .bannerHome2 {
-  height: 40rem;
+  height: 45rem;
   background-image: url("../img/homeBanner.jpg"); }
 
 .bannerRytter {
