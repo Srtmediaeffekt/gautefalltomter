@@ -11,5 +11,6 @@ year: 2014
 exclude: [node_modules]
 baseurl: ''
 
-paginate_path: "/bloggen/page:num/"
+paginate_path: "/gautefallbloggen/page:num/"
 paginate: 10
+permalink: /gautefallbloggen/:title/ 

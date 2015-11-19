@@ -1,0 +1,40 @@
+---
+title: Gautefallbloggen
+layout: blog
+---
+<section class="box special">
+	<header class="major">
+		<h1 class="light">Gautefalltomter Bloggen</h1>
+	</header>
+	{% for post in paginator.posts %}
+  	<section class="box special">
+			<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+			<span class="date">{{ post.date | date_to_string }}</span>
+      <img src="{{ post.image}}"  class="image featured">
+			{{ post.excerpt }} 
+			<ul class="actions">
+				<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Les mer</a></li>
+			</ul>
+      
+		</section>
+    <hr />
+
+		  {% endfor %}
+
+
+      <section class="pagination">
+ 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Forrige</a>
+  {% endif %}
+    <span class="page_number ">Side: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Neste</a>
+  {% endif %}
+ 
+
+</section>
+ 
+
+</section>
+

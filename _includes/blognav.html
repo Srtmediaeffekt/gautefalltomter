@@ -1,0 +1,23 @@
+<!-- Header -->
+<header id="header" class="alt">
+	<h1><a href="/index.html"><img src="http://0.0.0.0:4000/img/logo@2x.png" alt="Hjem"   height="48"></a></h1>
+	<nav id="nav">
+		<ul>
+
+			<li><a href="{{ site.baseurl }}/gautefallbloggen">Gautefallbloggen</a></li>
+			<li>
+				<a href="{{ site.baseurl }}/" class="icon fa-angle-down">Gautefalltomter</a>
+				<ul>
+		      <li class="{% if page.title == "Rytterspranget Vest" %}activeLi{% endif %}"><a class="buttons" href="/page-ryttersprangetvest.html">Rytterspranget Vest</a></li>
+
+		      <li class="{% if page.title == "Området" %}activeLi{% endif %}"><a class="buttons" href="/page-omradet.html">Området</a></li>
+		      <li class="{% if page.title == "Hytter" %}activeLi{% endif %}"><a class="buttons" href="/page-hytter.html">Hytter</a></li>
+		      <li class="{% if page.title == "Tomter" %}activeLi{% endif %}"><a class="buttons" href="/page-tomter.html">Tomter</a></li>
+		      <li class="{% if page.title == "Kontakt" %}activeLi{% endif %}"><a class="buttons" href="/page-kontakt.html">Kontakt</a></li>
+        </ul>
+
+			</li>
+
+		</ul>
+	</nav>
+</header>
