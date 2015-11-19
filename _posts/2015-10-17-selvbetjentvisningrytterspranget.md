@@ -13,7 +13,7 @@ Her finner du også ei postkasse som inneholder infoark om alle tomtene, både h
 
 Du tar med deg infoarket og går og ser på ledige tomter som er merket klart og tydelig med nummer på hver tomt.
 
-Ta deg en tur og se J. Ønsker du mer info eller en guidet visning så ta gjerne kontakt med Olav Gjelstad på tlf 98 22 18 45 eller [olav.gjelstad@gautefalltomter.no](olav.gjelstad@gautefalltomter.no) 
+Ta deg en tur og se :) . Ønsker du mer info eller en guidet visning så ta gjerne kontakt med Olav Gjelstad på tlf 98 22 18 45 eller [olav.gjelstad@gautefalltomter.no](olav.gjelstad@gautefalltomter.no) 
 
 ![](/assets/images/b3.jpg){: .image .featured}
 ![](/assets/images/b4.jpg){: .image .featured}
