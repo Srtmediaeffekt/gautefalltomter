@@ -422,6 +422,14 @@
       text-align: center;
       padding: 1em;
   }
+
+  .back {
+    position: absolute;
+    z-index: 10000;
+    top: 2em;
+    left: 2em;
+    border: 0;
+}
 /* Box */
   
 	.box {
@@ -430,6 +438,7 @@
 		margin: 0 0 2em 0;
 		padding: 0 3em;
     overflow: hidden;
+    position: relative;
 	}
 	.box .box {
 
